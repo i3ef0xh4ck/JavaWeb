@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script>
+			$(document).ready(function(){
+				
+				$(".show-item:nth-child(1)").click(function(){
+					$("#detail").removeAttr("class").addClass("t-mix3");
+				});
+				$(".show-item:nth-child(2)").click(function(){
+					$("#detail").removeAttr("class").addClass("t-mi8");
+				});
+				$(".show-item:nth-child(3)").click(function(){
+					$("#detail").removeAttr("class").addClass("t-max3");
+				});
+				
+				$(".show-item").click(function(){
+					if($(this).attr("class") == "show-item"){
+						$(this).addClass("choosed");
+					}
+					else {
+						$(this).removeClass("choosed");
+						$("#detail").removeAttr("class");
+					}
+					$(this).siblings().removeClass("choosed");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="header clear">
+			<div class="logo">
+				<img src="img/logo.png" width="55px"/>
+			</div>
+			<h1>为发烧而生？</h1>
+		</div>
+		<div class="content">
+			<div class="main-content clear">
+				<div class="show">
+					<div class="top clear">
+						<div class="show-item">
+							<div class="p-img">
+								<img src="img/mi_mix_3.png" width="144px" height="131px" title="    93.4% 超高屏占比
+    6.39'' 全面屏，正面只有屏幕
+
+    磁动力滑盖全面屏
+    全新交互，复杂操作一推即达
+
+    全新手持超级夜景
+    稳稳定格，绝美夜色
+
+    960 帧慢动作摄影
+    AI 智能配乐，捕捉至美一瞬
+
+    前置 24MP+2MP
+    超旗舰前置柔光双摄
+
+    后置 12MP+12MP 
+    超旗舰 AI 超感光双摄
+
+    传承中华国宝艺术之美
+    小米MIX 3 故宫特别版
+
+    骁龙845 + 10GB
+    超旗舰性能
+
+    高效 10W 无线充电
+    随手机赠送无线充电器
+
+    小爱同学 独立 AI 键
+    支持 7 种地方语言"/>
+							</div>
+							<a href="#">小米mix3</a>
+						</div>
+						<div class="show-item">
+							<div class="p-img">
+								<img src="img/mi_8.png" width="144px" height="131px" title="    骁龙845 处理器 超旗舰性能
+    全球首款双频GPS 超精准定位
+    红外人脸识别 全黑环境疾速解锁
+    三星 AMOLED 屏 广色域，高对比度
+    超轻四曲面 轻薄圆润，舒适手感
+    前置2000万 「微整形」美颜
+    AI 变焦双摄 1200万 + 1200万
+    AI 场景相机 影棚光效 + 识别206种场景
+    AI 短视频剪辑 一键生成电影大片
+    3400mAh 电池 支持QC4+ 快充协议*
+    AI 语音助手 内置小爱同学App
+    多功能NFC 已支持167城公共交通出行*"/>
+							</div>
+							<a href="#">小米8</a>
+						</div>
+						<div class="show-item">
+							<div class="p-img">
+								<img src="img/mi_max_3.png" width="144px" height="131px" title="
+骁龙 636 八核处理器
+
+6GB 大内存最高可选
+
+骁龙 636 处理器，最高主频 1.8GHz
+
+Adreno™ 509 图形处理器
+
+4GB+64GB / 6GB+128GB 两版本可选
+
+LPDDR4x 双通道大内存，eMMC 5.1 高速闪存
+
+6.9” 巨无霸级全面屏
+
+6.9 英寸（对角线）
+
+520nit 亮度
+
+2160×1080 分辨率，1500:1 对比度
+
+84% NTSC色域"/>
+							</div>
+							<a href="#">小米max3</a>
+						</div>
+					</div>
+					<div id="detail"></div>
+				</div>
+				<div class="aside">
+					<div class="aside-tittle">
+						商品分类
+					</div>
+					<ul>
+						<a href="#"><li>手机 电话卡</li></a>
+						<a href="#"><li>电视 盒子</li></a>
+						<a href="#"><li>笔记本 平板</li></a>
+						<a href="#"><li>家电 插线板</li></a>
+						<a href="#"><li>出行 穿戴</li></a>
+						<a href="#"><li>智能 路由器</li></a>
+						<a href="#"><li>电源 配件</li></a>
+						<a href="#"><li>健康 儿童</li></a>
+						<a href="#"><li>耳机 音箱</li></a>
+						<a href="#"><li>生活 箱包</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-content">
+				<div class="copyright">
+					版权所有： 四川师范大学 计算机科学学院 2016级4班 吴建成 2016110444
+				</div>
+				<div class="date">
+					更新日期：2018年11月1日
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
